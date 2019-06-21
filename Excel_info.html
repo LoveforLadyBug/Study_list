@@ -3,19 +3,54 @@
   <head>
     <title>My Study list_Excel</title>
     <meta charset="utf-8">
+    <style>
+    body{
+      margin: 0;
+    }
+    #active{
+      color: red;
+    }
+    a{
+      color: black;
+      text-decoration: none;
+    }
+    h1{
+      font-size: 60px;
+      text-align: center;
+      border-bottom: 1px solid black;
+      margin: 0;
+      padding: 20px;
+    }
+    #grid ol{
+      border-right: 1px solid black;
+      width: 150px;
+      margin:0;
+      padding: 20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 220px 1fr;
+    }
+    #grid #article{
+      padding-left: 25px;
+    }
+    </style>
   </head>
 
 <body>
   <h1><a href="index.html">Study list</a></h1>
-    <ul>
-      <li><a href="Excel_info.html">Excel</a></li>
+  <div id="grid">
+    <ol>
+      <li><a href="Excel_info.html" id="active">Excel</a></li>
       <li><a href="Python_info.html">Python</a></li>
       <li><a href="Web Programing_info.html">Web Programing</a></li>
       <li><a href="Game Development_info.html">Game Development</a></li>
-    </ul>
-      <h2>MicroSoft Office Excel</h2>
-      <img src="Excel.jpg" width="35%">
-      <p>마이크로소프트 사의 오피스 프로그램 중 엑셀.</p>
-
+    </ol>
+      <div id="article">
+        <h2>MicroSoft Office Excel</h2>
+        <img src="Excel.jpg" width="35%">
+        <p>마이크로소프트 사의 오피스 프로그램 중 엑셀.</p>
+      </div>
+  </div>
 </body>
 </html>
